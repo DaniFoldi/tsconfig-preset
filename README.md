@@ -20,6 +20,26 @@ tsconfig.json:
 
 ```json
 {
-  "extends": "some-tsconfig-preset"
+  "extends": "some-tsconfig-preset",
+  "include": [
+    "src/**/*.ts?x",
+    "test?s/**/*.ts?x",
+    "**/*.json",
+    "*.d.ts",
+    "src/*.d.ts"
+  ]
+}
+```
+
+```json
+{
+  "extends": "some-tsconfig-preset/workers",
+  "include": [
+    "src/**/*.ts?x",
+    "test?s/**/*.ts?x",
+    "**/*.json",
+    "*.d.ts",
+    "src/*.d.ts"
+  ]
 }
 ```

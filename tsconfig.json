@@ -40,12 +40,5 @@
     "useDefineForClassFields": true,
     "useUnknownInCatchVariables": true,
     "verbatimModuleSyntax": true
-  },
-  "include": [
-    "src/**/*.ts?x",
-    "test?s/**/*.ts?x",
-    "**/*.json",
-    "*.d.ts",
-    "src/*.d.ts"
-  ]
+  }
 }
