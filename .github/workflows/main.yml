@@ -1,0 +1,42 @@
+name: Publish some-tsconfig-preset
+
+on:
+  push:
+    branches: [ main ]
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Publish package to npm
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      timeout-minutes: 5
+      uses: actions/checkout@v4
+
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: 8
+
+    - name: Install nodejs
+      timeout-minutes: 5
+      uses: actions/setup-node@v3
+      with:
+        node-version: 20
+        cache: pnpm
+
+    - name: Install dependencies
+      timeout-minutes: 5
+      run: pnpm i
+
+    - uses: JS-DevTools/npm-publish@v2
+      timeout-minutes: 5
+      with:
+        access: public
+        package: ./package.json
+        token: ${{ secrets.NPM_TOKEN }}
