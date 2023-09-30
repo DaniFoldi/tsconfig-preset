@@ -1,0 +1,15 @@
+{
+  "name": "some-tsconfig-preset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tsconfig.json",
+  "scripts": {
+  },
+  "keywords": [
+    "tsconfig preset",
+    "strict tsconfig preset",
+    "tsconfig base"
+  ],
+  "author": "DaniFoldi",
+  "license": "MIT"
+}
