@@ -43,3 +43,17 @@ tsconfig.json:
   ]
 }
 ```
+
+```json
+{
+  "extends": "some-tsconfig-preset/node",
+  "include": [
+    "src/**/*.ts?x",
+    "scripts/**/*.ts?x",
+    "test?s/**/*.ts?x",
+    "**/*.json",
+    "*.d.ts",
+    "src/*.d.ts"
+  ]
+}
+```
