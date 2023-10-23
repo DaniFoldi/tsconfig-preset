@@ -22,11 +22,10 @@ tsconfig.json:
 {
   "extends": "some-tsconfig-preset",
   "include": [
-    "src/**/*.ts?x",
+    "src/**/*",
     "test?s/**/*.ts?x",
     "**/*.json",
-    "*.d.ts",
-    "src/*.d.ts"
+    "*.d.ts"
   ]
 }
 ```
@@ -35,11 +34,10 @@ tsconfig.json:
 {
   "extends": "some-tsconfig-preset/workers",
   "include": [
-    "src/**/*.ts?x",
+    "src/**/*",
     "test?s/**/*.ts?x",
     "**/*.json",
-    "*.d.ts",
-    "src/*.d.ts"
+    "*.d.ts"
   ]
 }
 ```
@@ -48,12 +46,13 @@ tsconfig.json:
 {
   "extends": "some-tsconfig-preset/node",
   "include": [
-    "src/**/*.ts?x",
+    "src/**/*",
     "scripts/**/*.ts?x",
     "test?s/**/*.ts?x",
     "**/*.json",
-    "*.d.ts",
-    "src/*.d.ts"
+    "*.d.ts"
   ]
 }
 ```
+
+Additionally, you can add `some-tsconfig-preset/strict` to forbid unused variables and parameters.
