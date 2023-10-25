@@ -1,4 +1,5 @@
 {
+  "exactOptionalPropertyTypes": true,
   "noUnusedLocals": true,
   "noUnusedParameters": true
 }
