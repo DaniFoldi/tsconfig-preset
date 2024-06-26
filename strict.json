@@ -1,6 +1,10 @@
 {
-  "exactOptionalPropertyTypes": true,
-  "noPropertyAccessFromIndexSignature": true,
-  "noUnusedLocals": true,
-  "noUnusedParameters": true
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "exactOptionalPropertyTypes": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  }
 }
